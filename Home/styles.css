@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffdfd;
+    color: #333;
+    height: auto;
+}
+.logo{
+    border: 2px solid rgb(247, 240, 240);
+    margin-left: auto;
+    height: 30vh;
+    background-color: aliceblue;
+    margin-top: 0px;
+    border-radius: 50%;
+    align-self: center;
+    justify-content: center;
+    margin-left: 15%;
+}
+
+
+.container {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-left: 3px;
+    justify-content: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+
+header h1 {
+    margin: 0;
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+a:hover{
+    color: rgb(4, 7, 7);
+    background-color: #f4f4f4;
+    font-size: x-large;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+.maindiv{
+    margin: 0 auto; /* Center the image horizontally */
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for responsiveness */
+    justify-content:space-around; /* Distribute items evenly */
+    max-width: auto; /* Set maximum width if needed */
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+    height: auto;
+    text-align: center;
+}
+/*
+.pic{
+    margin-top: 16px;
+    flex: 1;  Equal width for all sub-divs 
+    background-color:#ffffff;
+    margin-bottom: 20px; 
+    justify-content: space-between;
+}*/
+footer {
+    margin-bottom: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animated-text {
+    font-size: 150%;
+    font-weight: bold;
+    color: #333;
+    animation: slideIn 6s ease-out infinite ;
+    animation-delay: 5s;
+    display: flex;
+}
+.text{
+    margin-top: 0;
+}
+.maindiv2{
+    margin: 0 auto; /* Center the image horizontally */
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for responsiveness */
+    justify-content:space-around; /* Distribute items evenly */
+    max-width: 100%;
+    background-color: #333;
+    padding: 0;
+    overflow: hidden;
+    height: auto;
+    text-align: center;
+}
+.picc{
+    margin-top: 16px;
+    flex: 1; /* Equal width for all sub-divs */
+    background-color:#ffffff;
+    margin-bottom: 20px; 
+    justify-content: space-between;
+    background-color: #302c2c;
+}
+
+@media screen and (max-width: 768px) {
+    /* CSS rules for smaller screens */
+}
+
+.container {
+    width: 90%; /* Example of a flexible container width */
+    max-width: 800px; /* Set maximum width if needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+}
+
+.pic {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
